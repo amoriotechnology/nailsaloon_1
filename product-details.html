@@ -18,6 +18,8 @@
       rel="stylesheet"
     />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
@@ -127,7 +129,10 @@
                 <h3>Service information</h3>
                 <ul>
                   <li><strong>Category</strong>: Signature Gel Manicure</li>
-                  <li><strong>Product date</strong>: 01 March, 2020</li>
+                  <li><strong>Product date</strong>: <script>
+                    var now = moment().format('MMMM Do YYYY');
+                    document.write(now)
+                  </script></li>
                 </ul>
               </div>
               <div class="portfolio-description">
